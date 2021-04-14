@@ -8,12 +8,10 @@ const App = () => (
         <Router>
             <Switch>
                 <Switch>
-                    {
-                        routers.map((route, i) => (
-                            // eslint-disable-next-line react/jsx-props-no-spreading
-                            <Route exact key={i} {...route} />
-                        ))
-                    }
+                    {routers.map((route, i) => (
+                        // eslint-disable-next-line react/jsx-props-no-spreading
+                        <Route exact key={i} {...route} />
+                    ))}
                 </Switch>
             </Switch>
         </Router>
