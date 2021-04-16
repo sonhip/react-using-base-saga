@@ -28,11 +28,15 @@
       "newlines-between": "always"
     }
     ],
+    "arrow-body-style": "off",
+    "implicit-arrow-linebreak": "off",
     "arrow-parens": "warn",
-    "comma-dangle": ["error", {"functions": "ignore"}],
+    "operator-linebreak":"off",
+    "comma-dangle":"off",
     "consistent-return": "off",
     "eqeqeq": "off",
     "function-paren-newline": "off",
+    "linebreak-style":"off",
     "import/extensions": ["error", { "js": "never" }],
     "import/no-named-as-default": "off",
     "import/no-named-as-default-member": "off",

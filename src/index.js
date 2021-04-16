@@ -9,6 +9,7 @@ import configureStore from './state/configureStore';
 import rootReducer from './state/rootReducer';
 import rootSaga from './state/rootSaga';
 import './assets/libs/tailwind.css';
+import './main.css';
 
 const store = configureStore({}, rootReducer);
 
@@ -20,7 +21,7 @@ ReactDOM.render(
             <App />
         </BrowserRouter>
     </Provider>,
-    document.getElementById('root')
+    document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change
