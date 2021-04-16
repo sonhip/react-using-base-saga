@@ -18,7 +18,7 @@ const ResultComponent = (props) => {
         }),
     );
     const getCurrentDate = () => {
-        let gsDayNames = [
+        let DayNames = [
             'Sunday',
             'Monday',
             'Tuesday',
@@ -44,7 +44,7 @@ const ResultComponent = (props) => {
         ];
 
         const today = new Date();
-        const dayName = gsDayNames[today.getDay()];
+        const dayName = DayNames[today.getDay()];
         const day = today.getDate();
         const month = monthNames[today.getMonth()];
         return `${dayName} ${day} ${month}`;
@@ -67,7 +67,7 @@ const ResultComponent = (props) => {
     }
     if (!isEmptyObject(error)) {
         return (
-            <div className='flex justify-center items-center bg-form text-white text-sm rounded mt-16 p-4 sm:text-xl sm:p-8'>
+            <div className='flex justify-center items-center bg-form text-white text-sm rounded mt-16 p-4 sm:text-xl sm:p-8 opacity-0 opacity-100 transform transition-all duration-1000'>
                 <p>
                     😢😢😢 Sorry, the specificed city was not found! Please try
                     a gain!
